@@ -4,21 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maggie Simpson</title>
+    <!-- Week 2 Requirement: Linking to external CSS file (or CSS Page)-->
+    <!-- This is known as "External CSS"-->
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body bgcolor="EDf2F1">
-    <!-- Requirement 3: Two different size headers. This is header 1 of  -->
-    <h1>Maggie Simpson</h1>
-    <h3>Maggie is the baby of the family. She has beef with baby Gerald.</h3>
-    <br>
-    <p>Welcome to Maggie's Page. (She's on the right).</p>
+<!-- Week 2: Removed bgcolor="EDf2F1" because I can style in External CSS -->
+<body class ="newbody">
+    <header>
+        <!-- Week 1 Requirement 3: Two different size headers. -->
+        <!-- Week 2: H1 and H3 use Element Selectors -->
+        <h1>Maggie Simpson</h1>
+        <h3>Maggie is the baby of the family. She has beef with baby Gerald.</h3>
+        <br>
+        <!-- Week 2: This p uses ID Selector -->
+        <p id="large-paragraph">Welcome to Maggie's Page. (She's on the right).</p>
+    </header>
     <!-- Requirement 3: Add 3 images. This is image 6 of the 3 required. -->
-    <img height="450px" src="05maggie-gerald.jpeg" alt="Maggie Simpson"/>
+    <!-- Week 2: Removed height="450px" because I can style in External CSS -->
+    <img src="05maggie-gerald.jpeg" alt="Maggie Simpson"/>
     <br>
+    <!-- Week 2: Div uses Element Selector -->
     <div><h3><b>Table of Contents:</b></h3></div>
+    <!-- Week 2: UL uses Element Selector -->
     <ul>
         <!-- Requirement 2: Create at least 3 pages to navigate between. -->
         <!-- Requirement 3: Create a list -->
         <!-- Page 1: the Home Page (index.html) -->
+        <!-- Week 2: Hyperlinks use Element Selectors and Pseudo-classes -->
         <li><a href="index.html">Home Page</a></li>
         <!-- Page 2: Homer Simpson -->
         <li><a href="homer.html">Homer Simpson</a></li>
@@ -36,7 +48,9 @@
     <br>
     <p>Below is a table that shows Episode Titles which contain the character name.</p>
     <!-- Requirement 3: Table -->
-    <table border="1">
+    <!-- Week 2: removing the border="1" becuase I can do that in External CSS -->
+    <!-- tr, th, td all use Element Selectors -->
+    <table>
         <thead>
             <tr>
                 <th>Character Name</th>
@@ -82,13 +96,16 @@
     <br>
     <br>
 
+    <!-- Week 2: P uses Element Selector -->
     <p><u>Enter in a Season number and an Episode Title:</u></p>
     <!-- Requirement 3: Form -->
+    <!-- Week 2: Form Label, type="text", type="submit" all use Element Selectors -->
     <form>
         <label for="SeasonNumber">Season Number:</label><br>
         <input type="text" id="SeasonNumber" name="SeasonNumber"><br>
         <label for="EpisodeName">Episode name:</label><br>
-        <input type="text" id="EpisodeName" name="EpisodeName">
+        <input type="text" id="EpisodeName" name="EpisodeName"><br>
+        <input type="submit" value="Submit">
     </form>
 
 
